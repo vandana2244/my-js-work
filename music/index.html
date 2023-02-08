@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <title>project</title>
+</head>
+
+<body>
+    <section class="main">
+        <div class="inner_main">
+            <div class="previous change-button" onclick="decrease(1)"> < </div>
+            <div class="outer_cards">
+                <nav class="navbar">
+                    <div class="logo">
+                        <h1>Music</h1>
+                    </div>
+                    <div class="hamburger" onclick="showMenu()">
+
+                    </div>
+                    <ul class="navbar_list">
+                        <li class="menues" style="--i:1" onclick="showcard(1)">Home</li>
+                        <li class="menues" style="--i:2" onclick="showcard(2)">About us</li>
+                        <li class="menues" style="--i:3" onclick="showcard(3)">Our shows</li>
+                        <li class="menues" style="--i:4" onclick="showcard(4)">Contact</li>
+                    </ul>
+                </nav>
+                <div class="card">
+                    <div class="inner_card">
+                        <div class="img_section leftAnim">
+                            <img src="./photos/headphones2-removebg-preview.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="inner_content rightAnim">
+                                <h1>Welcome to Our Production</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fugit qui vitae officia id quo illo reiciendis aperiam quos, architecto numquam perferendis itaque sint tempore ea dicta, quis molestiae repellat nulla a repudiandae. Eaque recusandae ratione qui aut! Fugiat cum repellendus aliquam cupiditate nemo nam, natus enim dolor, id sunt laudantium?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" id="about">
+                    <div class="inner_card who_we_are about_inner show">
+                        <div class="img_section leftAnim">
+                            <img src="./photos/piano-removebg-preview.png" alt="">
+                        </div>
+                        <div class="content">
+                            <div class="inner_content rightAnim">
+                                <h1>Who We Are</h1>
+                                <p>Lorem ipsum dolor sit amet consectetur, adipsicing elit. Fugit qui vitae officia id quo illo reiciendis aperiam quos, architecto numquam perferendis itaque sint tempore ea dicta, quis molestiae repellat nulla a repudiandae. Eaque recusandae ratione qui aut! Fugiat cum repellendus aliquam cupiditate nemo nam, natus enim dolor, id sunt laudantium?</p>
+                                <div class="buttons">
+                                    <button class="team">
+                                        Our Team
+                                    </button>
+                                </div>
+                            </div>
+                        </div> 
+                    </div>
+                    <div class="inner_card team_section about_inner">
+                        <div class="team_card teamleftAnim" style="--i:1">
+                            <div class="team_img">
+                                <img src="./photos/drummer1.png" alt="">
+                            </div>
+                            <div class="team_content">
+                                <h2 class="team_name">Liam Anderson</h2>
+                                <p>(Drummer)</p>
+                            </div>
+                        </div>
+                        <div class="team_card teamcenterAnim" style="--i:2">
+                            <div class="team_img">
+                                <img src="./photos/music teacher1.png" alt="">
+                            </div>
+                            <div class="team_content">
+                                <h2 class="team_name">Liam Anderson</h2>
+                                <p>(singer)</p>
+                            </div>
+                        </div>
+                        <div class="team_card teamrightAnim" style="--i:3">
+                            <div class="team_img">
+                                <img src="./photos/music teacher2.png" alt="">
+                            </div>
+                            <div class="team_content">
+                                <h2 class="team_name">Liam Anderson</h2>
+                                <p>(singer & guitarist)</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+                <div class="card" id="shows">
+                    <div class="inner_card our_shows" style="--i:1">
+                        <div class="show_card animCalenderleft">
+                            <div class="city_state">
+                                <h3><i class="fa-solid fa-calendar-days"></i> 23-01-2023</h3>
+                                <p><i class="fa-solid fa-location-dot"></i> New Year</p>
+                                <p>(USA)</p>
+                            </div>
+                            <div class="book-btn">
+                                <button>Ticket</button>
+                            </div>
+                        </div>
+                        <div class="show_card animCalenderright" style="--i:1">
+                            <div class="city_state">
+                                <h3><i class="fa-solid fa-calendar-days"></i> 23-01-2023</h3>
+                                <p><i class="fa-solid fa-location-dot"></i> New Year</p>
+                                <p>(USA)</p>
+                            </div>
+                            <div class="book-btn">
+                                <button>Ticket</button>
+                            </div>
+                        </div>
+                        <div class="show_card animCalenderleft" style="--i:2">
+                            <div class="city_state">
+                                <h3><i class="fa-solid fa-calendar-days"></i> 23-01-2023</h3>
+                                <p><i class="fa-solid fa-location-dot"></i> New Year</p>
+                                <p>(USA)</p>
+                            </div>
+                            <div class="book-btn">
+                                <button>Ticket</button>
+                            </div>
+                        </div>
+                        <div class="show_card animCalenderright" style="--i:2">
+                            <div class="city_state">
+                                <h3><i class="fa-solid fa-calendar-days"></i> 23-01-2023</h3>
+                                <p><i class="fa-solid fa-location-dot"></i> New Year</p>
+                                <p>(USA)</p>
+                            </div>
+                            <div class="book-btn">
+                                <button>Ticket</button>
+                            </div>
+                        </div>
+                        <div class="show_card animCalenderleft" style="--i:3">
+                            <div class="city_state">
+                                <h3><i class="fa-solid fa-calendar-days"></i> 23-01-2023</h3>
+                                <p><i class="fa-solid fa-location-dot"></i> New Year</p>
+                                <p>(USA)</p>
+                            </div>
+                            <div class="book-btn">
+                                <button>Ticket</button>
+                            </div>
+                        </div>
+                        <div class="show_card animCalenderright" style="--i:3">
+                            <div class="city_state">
+                                <h3><i class="fa-solid fa-calendar-days"></i> 23-01-2023</h3>
+                                <p><i class="fa-solid fa-location-dot"></i> New Year</p>
+                                <p>(USA)</p>
+                            </div>
+                            <div class="book-btn">
+                                <button>Ticket</button>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <div class="inner_card">
+                        <div class="img_section contact-img leftAnim">
+                            <img src="./photos/music concept.png" alt="">
+                        </div>
+                        <div class="content rightAnim">
+                            <h1>Reach Us</h1>
+                            <form class="inner_content contact-form">
+                                <input type="text" placeholder="NAME" required>
+                                <input type="email" placeholder="EMAIL" required>
+                                <input type="tel" placeholder="PHONE NUMBER" required>
+                                <BUtton>Submit</BUtton>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="next change-button" onclick="increase(1)"> > </div>
+        </div>
+    </section>
+    <script>
+        var count=1;
+        var card=document.getElementsByClassName("card");
+        showcard(count);
+        function increase(n){
+            count=count+n;
+            showcard(count)
+        }
+        function decrease(n){
+            count=count-n;
+            showcard(count)
+        }
+        function showcard(n){
+            count=n;
+            for(i=0;i<card.length;i++){
+                card[i].classList.remove('active');
+            }
+            if(count<=0){
+                count=card.length
+            }
+            if(count>card.length){
+                count=1;
+            }
+            if(count==2){
+                document.querySelector('.who_we_are').classList.add('show');
+            document.querySelector('.team_section').classList.remove('show');
+            }
+            card[count-1].classList.add('active');
+        }
+        document.querySelector('button.team').addEventListener('click',function(){
+            document.querySelector('.team_section').classList.add('show');
+            document.querySelector('.who_we_are').classList.remove('show');
+        });
+        function showMenu() {
+            document.querySelector('.hamburger').classList.toggle
+                ('close');
+            document.querySelector('.navbar_list').classList.toggle
+                ('open');
+        }
+        // function our_shows() {
+        //     document.querySelector('.hamburger').classList.toggle
+        //         ('close');
+        // }
+
+    </script>
+</body>
+
+</html>
